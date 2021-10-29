@@ -1,50 +1,43 @@
-import { MemoryRouter as Router, Switch, Route } from 'react-router-dom';
-import icon from '../../assets/icon.svg';
-import './App.css';
+import { MemoryRouter as Router, Route, Switch } from 'react-router-dom';
+import ApplicationBar from './parts/ApplicationBar';
+import Home from './pages/Home';
+import Contacts from './pages/Contacts';
+import AddContacts from './pages/AddContact';
 
-const Hello = () => {
+const AppHeader = () => {
   return (
-    <div>
-      <div className="Hello">
-        <img width="200px" alt="icon" src={icon} />
-      </div>
-      <h1>electron-react-boilerplate</h1>
-      <div className="Hello">
-        <a
-          href="https://electron-react-boilerplate.js.org/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button type="button">
-            <span role="img" aria-label="books">
-              📚
-            </span>
-            Read our docs
-          </button>
-        </a>
-        <a
-          href="https://github.com/sponsors/electron-react-boilerplate"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button type="button">
-            <span role="img" aria-label="books">
-              🙏
-            </span>
-            Donate
-          </button>
-        </a>
-      </div>
-    </div>
+    <header>
+      <ApplicationBar />
+    </header>
+  );
+};
+
+const AppFooter = () => {
+  return (
+    <footer>
+      <div />
+    </footer>
   );
 };
 
 export default function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/" component={Hello} />
-      </Switch>
-    </Router>
+    <div>
+      {/* ルーティング処理 */}
+      <Router>
+        {/* アプリケーションヘッダ */}
+        <AppHeader />
+        {/* メイン部分 */}
+        <main>
+          <Switch>
+            <Route path="/contacts" component={Contacts} />
+            <Route path="/add-new-contact" component={AddContacts} />
+            <Route path="/" component={Home} />
+          </Switch>
+        </main>
+        {/* アプリケーションフッタ */}
+        <AppFooter />
+      </Router>
+    </div>
   );
 }

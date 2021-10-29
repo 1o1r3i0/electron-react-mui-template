@@ -1,0 +1,14 @@
+.application-bar-list-item-icon {
+  color: white !important;
+  margin-left: -30px;
+  margin-right: -25px;
+}
+
+.application-bg-color {
+  background-color: #f6f6f4;
+}
+
+.application-content {
+  height: 585px;
+  background-color: #fff;
+}
