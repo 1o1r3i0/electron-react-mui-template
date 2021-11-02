@@ -13,7 +13,9 @@ class Contact implements IContact {
 
   address_zip_code!: string;
 
-  address_prefecture!: string;
+  address_prefecture_code!: string;
+
+  address_prefecture_name!: string;
 
   address_city!: string;
 
@@ -36,7 +38,8 @@ class Contact implements IContact {
     user_birthday: string,
     user_relationship: number,
     address_zip_code: string,
-    address_prefecture: string,
+    address_prefecture_code: string,
+    address_prefecture_name: string,
     address_city: string,
     address_street: string,
     phone_number: string,
@@ -51,7 +54,8 @@ class Contact implements IContact {
     this.user_birthday = user_birthday;
     this.user_relationship = user_relationship;
     this.address_zip_code = address_zip_code;
-    this.address_prefecture = address_prefecture;
+    this.address_prefecture_code = address_prefecture_code;
+    this.address_prefecture_name = address_prefecture_name;
     this.address_city = address_city;
     this.address_street = address_street;
     this.phone_number = phone_number;

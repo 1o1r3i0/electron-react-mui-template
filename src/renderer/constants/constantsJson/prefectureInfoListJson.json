@@ -1,0 +1,286 @@
+{
+  "prefectureInfoList": [
+    {
+      "address_prefecture_code": "01",
+      "address_prefecture_name": "北海道",
+      "address_prefecture_name_kana": "ほっかいどう",
+      "address_prefecture_name_latin": "Hokkaido"
+    },
+    {
+      "address_prefecture_code": "02",
+      "address_prefecture_name": "青森県",
+      "address_prefecture_name_kana": "あおもりけん",
+      "address_prefecture_name_latin": "Aomori"
+    },
+    {
+      "address_prefecture_code": "03",
+      "address_prefecture_name": "岩手県",
+      "address_prefecture_name_kana": "いわてけん",
+      "address_prefecture_name_latin": "Iwate"
+    },
+    {
+      "address_prefecture_code": "04",
+      "address_prefecture_name": "宮城県",
+      "address_prefecture_name_kana": "みやぎけん",
+      "address_prefecture_name_latin": "Miyagi"
+    },
+    {
+      "address_prefecture_code": "05",
+      "address_prefecture_name": "秋田県",
+      "address_prefecture_name_kana": "あきたけん",
+      "address_prefecture_name_latin": "Akita"
+    },
+    {
+      "address_prefecture_code": "06",
+      "address_prefecture_name": "山形県",
+      "address_prefecture_name_kana": "やまがたけん",
+      "address_prefecture_name_latin": "Yamagata"
+    },
+    {
+      "address_prefecture_code": "07",
+      "address_prefecture_name": "福島県",
+      "address_prefecture_name_kana": "ふくしまけん",
+      "address_prefecture_name_latin": "Fukushima"
+    },
+    {
+      "address_prefecture_code": "08",
+      "address_prefecture_name": "茨城県",
+      "address_prefecture_name_kana": "いばらきけん",
+      "address_prefecture_name_latin": "Ibaraki"
+    },
+    {
+      "address_prefecture_code": "09",
+      "address_prefecture_name": "栃木県",
+      "address_prefecture_name_kana": "とちぎけん",
+      "address_prefecture_name_latin": "Tochigi"
+    },
+    {
+      "address_prefecture_code": "10",
+      "address_prefecture_name": "群馬県",
+      "address_prefecture_name_kana": "ぐんまけん",
+      "address_prefecture_name_latin": "Gumma"
+    },
+    {
+      "address_prefecture_code": "11",
+      "address_prefecture_name": "埼玉県",
+      "address_prefecture_name_kana": "さいたまけん",
+      "address_prefecture_name_latin": "Saitama"
+    },
+    {
+      "address_prefecture_code": "12",
+      "address_prefecture_name": "千葉県",
+      "address_prefecture_name_kana": "ちばけん",
+      "address_prefecture_name_latin": "Chiba"
+    },
+    {
+      "address_prefecture_code": "13",
+      "address_prefecture_name": "東京都",
+      "address_prefecture_name_kana": "とうきょうと",
+      "address_prefecture_name_latin": "Tokyo"
+    },
+    {
+      "address_prefecture_code": "14",
+      "address_prefecture_name": "神奈川県",
+      "address_prefecture_name_kana": "かながわけん",
+      "address_prefecture_name_latin": "Kanagawa"
+    },
+    {
+      "address_prefecture_code": "15",
+      "address_prefecture_name": "新潟県",
+      "address_prefecture_name_kana": "にいがたけん",
+      "address_prefecture_name_latin": "Niigata"
+    },
+    {
+      "address_prefecture_code": "16",
+      "address_prefecture_name": "富山県",
+      "address_prefecture_name_kana": "とやまけん",
+      "address_prefecture_name_latin": "Toyama"
+    },
+    {
+      "address_prefecture_code": "17",
+      "address_prefecture_name": "石川県",
+      "address_prefecture_name_kana": "いしかわけん",
+      "address_prefecture_name_latin": "Ishikawa"
+    },
+    {
+      "address_prefecture_code": "18",
+      "address_prefecture_name": "福井県",
+      "address_prefecture_name_kana": "ふくいけん",
+      "address_prefecture_name_latin": "Fukui"
+    },
+    {
+      "address_prefecture_code": "19",
+      "address_prefecture_name": "山梨県",
+      "address_prefecture_name_kana": "やまなしけん",
+      "address_prefecture_name_latin": "Yamanashi"
+    },
+    {
+      "address_prefecture_code": "20",
+      "address_prefecture_name": "長野県",
+      "address_prefecture_name_kana": "ながのけん",
+      "address_prefecture_name_latin": "Nagano"
+    },
+    {
+      "address_prefecture_code": "21",
+      "address_prefecture_name": "岐阜県",
+      "address_prefecture_name_kana": "ぎふけん",
+      "address_prefecture_name_latin": "Gifu"
+    },
+    {
+      "address_prefecture_code": "22",
+      "address_prefecture_name": "静岡県",
+      "address_prefecture_name_kana": "しずおかけん",
+      "address_prefecture_name_latin": "Shizuoka"
+    },
+    {
+      "address_prefecture_code": "23",
+      "address_prefecture_name": "愛知県",
+      "address_prefecture_name_kana": "あいちけん",
+      "address_prefecture_name_latin": "Aichi"
+    },
+    {
+      "address_prefecture_code": "24",
+      "address_prefecture_name": "三重県",
+      "address_prefecture_name_kana": "みえけん",
+      "address_prefecture_name_latin": "Mie"
+    },
+    {
+      "address_prefecture_code": "25",
+      "address_prefecture_name": "滋賀県",
+      "address_prefecture_name_kana": "しがけん",
+      "address_prefecture_name_latin": "Shiga"
+    },
+    {
+      "address_prefecture_code": "26",
+      "address_prefecture_name": "京都府",
+      "address_prefecture_name_kana": "きょうとふ",
+      "address_prefecture_name_latin": "Kyoto"
+    },
+    {
+      "address_prefecture_code": "27",
+      "address_prefecture_name": "大阪府",
+      "address_prefecture_name_kana": "おおさかふ",
+      "address_prefecture_name_latin": "Osaka"
+    },
+    {
+      "address_prefecture_code": "28",
+      "address_prefecture_name": "兵庫県",
+      "address_prefecture_name_kana": "ひょうごけん",
+      "address_prefecture_name_latin": "Hyogo"
+    },
+    {
+      "address_prefecture_code": "29",
+      "address_prefecture_name": "奈良県",
+      "address_prefecture_name_kana": "ならけん",
+      "address_prefecture_name_latin": "Nara"
+    },
+    {
+      "address_prefecture_code": "30",
+      "address_prefecture_name": "和歌山県",
+      "address_prefecture_name_kana": "わかやまけん",
+      "address_prefecture_name_latin": "Wakayama"
+    },
+    {
+      "address_prefecture_code": "31",
+      "address_prefecture_name": "鳥取県",
+      "address_prefecture_name_kana": "とっとりけん",
+      "address_prefecture_name_latin": "Tottori"
+    },
+    {
+      "address_prefecture_code": "32",
+      "address_prefecture_name": "島根県",
+      "address_prefecture_name_kana": "しまねけん",
+      "address_prefecture_name_latin": "Shimane"
+    },
+    {
+      "address_prefecture_code": "33",
+      "address_prefecture_name": "岡山県",
+      "address_prefecture_name_kana": "おかやまけん",
+      "address_prefecture_name_latin": "Okayama"
+    },
+    {
+      "address_prefecture_code": "34",
+      "address_prefecture_name": "広島県",
+      "address_prefecture_name_kana": "ひろしまけん",
+      "address_prefecture_name_latin": "Hiroshima"
+    },
+    {
+      "address_prefecture_code": "35",
+      "address_prefecture_name": "山口県",
+      "address_prefecture_name_kana": "やまぐちけん",
+      "address_prefecture_name_latin": "Yamaguchi"
+    },
+    {
+      "address_prefecture_code": "36",
+      "address_prefecture_name": "徳島県",
+      "address_prefecture_name_kana": "とくしまけん",
+      "address_prefecture_name_latin": "Tokushima"
+    },
+    {
+      "address_prefecture_code": "37",
+      "address_prefecture_name": "香川県",
+      "address_prefecture_name_kana": "かがわけん",
+      "address_prefecture_name_latin": "Kagawa"
+    },
+    {
+      "address_prefecture_code": "38",
+      "address_prefecture_name": "愛媛県",
+      "address_prefecture_name_kana": "えひめけん",
+      "address_prefecture_name_latin": "Ehime"
+    },
+    {
+      "address_prefecture_code": "39",
+      "address_prefecture_name": "高知県",
+      "address_prefecture_name_kana": "こうちけん",
+      "address_prefecture_name_latin": "Kochi"
+    },
+    {
+      "address_prefecture_code": "40",
+      "address_prefecture_name": "福岡県",
+      "address_prefecture_name_kana": "ふくおかけん",
+      "address_prefecture_name_latin": "Fukuoka"
+    },
+    {
+      "address_prefecture_code": "41",
+      "address_prefecture_name": "佐賀県",
+      "address_prefecture_name_kana": "さがけん",
+      "address_prefecture_name_latin": "Saga"
+    },
+    {
+      "address_prefecture_code": "42",
+      "address_prefecture_name": "長崎県",
+      "address_prefecture_name_kana": "ながさきけん",
+      "address_prefecture_name_latin": "Nagasaki"
+    },
+    {
+      "address_prefecture_code": "43",
+      "address_prefecture_name": "熊本県",
+      "address_prefecture_name_kana": "くまもとけん",
+      "address_prefecture_name_latin": "Kumamoto"
+    },
+    {
+      "address_prefecture_code": "44",
+      "address_prefecture_name": "大分県",
+      "address_prefecture_name_kana": "おおいたけん",
+      "address_prefecture_name_latin": "Oita"
+    },
+    {
+      "address_prefecture_code": "45",
+      "address_prefecture_name": "宮崎県",
+      "address_prefecture_name_kana": "みやざきけん",
+      "address_prefecture_name_latin": "Miyazaki"
+    },
+    {
+      "address_prefecture_code": "46",
+      "address_prefecture_name": "鹿児島県",
+      "address_prefecture_name_kana": "かごしまけん",
+      "address_prefecture_name_latin": "Kagoshima"
+    },
+    {
+      "address_prefecture_code": "47",
+      "address_prefecture_name": "沖縄県",
+      "address_prefecture_name_kana": "おきなわけん",
+      "address_prefecture_name_latin": "Okinawa"
+    }
+  ]
+}

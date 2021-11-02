@@ -6,6 +6,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { Button } from '@mui/material';
+import Contact from '../classes/Contact';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -27,75 +29,68 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(
-  name: string,
-  nameKana: string,
-  relationship: number,
-  phoneNumber: string,
-  mailAddress: string
-) {
-  return { name, nameKana, relationship, phoneNumber, mailAddress };
-}
+type Props = {
+  mockDataContactList: Contact[];
+  onClick: any;
+};
 
-const rows = [
-  createData(
-    '田中　太郎',
-    'タナカ　タロウ',
-    1,
-    '000-0000-0000',
-    'test@test.com'
-  ),
-  createData('佐藤　浩', 'サトウ　ヒロシ', 1, '000-0000-0000', 'test@test.com'),
-  createData(
-    '横山　愛子',
-    'ヨコヤマ　アイコ',
-    1,
-    '000-0000-0000',
-    'test@test.com'
-  ),
-  createData(
-    '寺岡　靖子',
-    'テラオカ　ヤスコ',
-    1,
-    '000-0000-0000',
-    'test@test.com'
-  ),
-  createData(
-    '秋葉　義夫',
-    'アキバ　ヨシオ',
-    1,
-    '000-0000-0000',
-    'test@test.com'
-  ),
-];
+export default function ContactTables(props: Props) {
+  const { mockDataContactList } = props;
+  const { onClick } = props;
 
-export default function ContactTables() {
   return (
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 700 }} aria-label="customized table">
-        <TableHead>
-          <TableRow>
-            <StyledTableCell>名前</StyledTableCell>
-            <StyledTableCell>フリガナ</StyledTableCell>
-            <StyledTableCell>間柄</StyledTableCell>
-            <StyledTableCell align="right">電話番号</StyledTableCell>
-            <StyledTableCell align="right">メールアドレス</StyledTableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <StyledTableRow key={row.name}>
-              <StyledTableCell component="th" scope="row">
-                {row.name}
-              </StyledTableCell>
-              <StyledTableCell>{row.nameKana}</StyledTableCell>
-              <StyledTableCell>{row.relationship}</StyledTableCell>
-              <StyledTableCell align="right">{row.phoneNumber}</StyledTableCell>
-              <StyledTableCell align="right">{row.mailAddress}</StyledTableCell>
-            </StyledTableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+    <div>
+      <TableContainer component={Paper} sx={{ maxHeight: 750 }}>
+        <Table
+          sx={{ minWidth: 300 }}
+          aria-label="customized table"
+          stickyHeader
+        >
+          <TableHead>
+            <TableRow>
+              <StyledTableCell>ID</StyledTableCell>
+              <StyledTableCell>名前</StyledTableCell>
+              <StyledTableCell>フリガナ</StyledTableCell>
+              <StyledTableCell>間柄</StyledTableCell>
+              <StyledTableCell align="right">電話番号</StyledTableCell>
+              <StyledTableCell align="right">携帯電話番号</StyledTableCell>
+              <StyledTableCell align="right">メールアドレス</StyledTableCell>
+              <StyledTableCell align="center">詳細</StyledTableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {mockDataContactList.map((row, index) => (
+              <StyledTableRow key={row.user_id}>
+                <StyledTableCell>{row.user_id}</StyledTableCell>
+                <StyledTableCell component="th" scope="row">
+                  {row.user_name}
+                </StyledTableCell>
+                <StyledTableCell>{row.user_name_kana}</StyledTableCell>
+                <StyledTableCell>{row.user_relationship}</StyledTableCell>
+                <StyledTableCell align="right">
+                  {row.phone_number}
+                </StyledTableCell>
+                <StyledTableCell align="right">
+                  {row.mobile_phone_number}
+                </StyledTableCell>
+                <StyledTableCell align="right">
+                  {row.mail_address}
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Button
+                    variant="outlined"
+                    onClick={() => {
+                      onClick(index);
+                    }}
+                  >
+                    詳細
+                  </Button>
+                </StyledTableCell>
+              </StyledTableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </div>
   );
 }

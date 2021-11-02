@@ -1,0 +1,11 @@
+{
+  "UserRelationshipInfoList": [
+    { "user_relationship_id": "0", "user_relationship_name": "なし" },
+    { "user_relationship_id": "1", "user_relationship_name": "家族" },
+    { "user_relationship_id": "2", "user_relationship_name": "友人" },
+    { "user_relationship_id": "3", "user_relationship_name": "勤め先" },
+    { "user_relationship_id": "4", "user_relationship_name": "取引先" },
+    { "user_relationship_id": "5", "user_relationship_name": "業者" },
+    { "user_relationship_id": "6", "user_relationship_name": "その他" }
+  ]
+}

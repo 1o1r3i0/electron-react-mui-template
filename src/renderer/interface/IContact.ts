@@ -11,8 +11,10 @@ interface IContact {
   user_relationship: number;
   // 住所・郵便番号
   address_zip_code: string;
-  // 住所・都道府県
-  address_prefecture: string;
+  // 住所・都道府県コード
+  address_prefecture_code: string;
+  // 住所・都道府県名
+  address_prefecture_name: string;
   // 住所・市区町村
   address_city: string;
   // 住所・丁目番地
