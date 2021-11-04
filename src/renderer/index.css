@@ -12,3 +12,35 @@
   height: 585px;
   background-color: #fff;
 }
+
+.dialog-header-typography {
+  padding: 0.4em 0.5em;
+  color: #494949;
+  background: #f4f4f4;
+  border-left: solid 7px #7db4e6;
+  border-bottom: solid 3px #d7d7d7;
+}
+
+a:link {
+  color: #1976d2;
+}
+a:hover {
+  color: red;
+}
+
+button.link-style-btn {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  text-decoration: underline;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #1976d2;
+}
+button.link-style-btn:hover {
+  text-decoration: underline;
+  color: red;
+}

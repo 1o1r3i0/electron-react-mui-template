@@ -6,7 +6,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { Button } from '@mui/material';
+import { IconButton } from '@mui/material';
+import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 import Contact from '../classes/Contact';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -40,7 +41,7 @@ export default function ContactTables(props: Props) {
 
   return (
     <div>
-      <TableContainer component={Paper} sx={{ maxHeight: 750 }}>
+      <TableContainer component={Paper} sx={{ maxHeight: 550 }}>
         <Table
           sx={{ minWidth: 300 }}
           aria-label="customized table"
@@ -77,14 +78,15 @@ export default function ContactTables(props: Props) {
                   {row.mail_address}
                 </StyledTableCell>
                 <StyledTableCell align="center">
-                  <Button
-                    variant="outlined"
+                  <IconButton
+                    aria-label="edit"
+                    color="secondary"
                     onClick={() => {
                       onClick(index);
                     }}
                   >
-                    詳細
-                  </Button>
+                    <ArticleOutlinedIcon />
+                  </IconButton>
                 </StyledTableCell>
               </StyledTableRow>
             ))}
