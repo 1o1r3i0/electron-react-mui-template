@@ -119,7 +119,7 @@ const ContactDialog = (props: Props) => {
               onClickDeleteConfirmButton(contactInfo.userId);
             }}
           >
-            <DeleteIcon />
+            <DeleteIcon color="error" />
           </IconButton>
         </Tooltip>
         <Tooltip title="編集">

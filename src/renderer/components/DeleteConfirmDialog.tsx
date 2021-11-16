@@ -7,7 +7,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
 import BlockIcon from '@mui/icons-material/Block';
-import DeleteIcon from '@mui/icons-material/Delete';
+import CheckIcon from '@mui/icons-material/Check';
 import { IconButton, Tooltip, Typography } from '@mui/material';
 
 const Transition = React.forwardRef(function Transition(
@@ -43,7 +43,7 @@ export default function DeleteConfirmDialog(props: Props) {
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogTitle>
-          <Typography variant="h5" component="div">
+          <Typography variant="h5" component="div" color="error">
             削除確認
           </Typography>
         </DialogTitle>
@@ -69,7 +69,7 @@ export default function DeleteConfirmDialog(props: Props) {
                 onClickDeleteButton(userId);
               }}
             >
-              <DeleteIcon color="error" />
+              <CheckIcon color="error" />
             </IconButton>
           </Tooltip>
         </DialogActions>
