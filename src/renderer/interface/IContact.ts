@@ -1,32 +1,32 @@
 interface IContact {
   // ユーザID
-  user_id: number;
+  userId: string;
   // ユーザ名
-  user_name: string;
+  userName: string;
   // ユーザ名（カナ）
-  user_name_kana: string;
+  userNameKana: string;
   // ユーザ生年月日
-  user_birthday: string;
+  userBirthday: string;
   // ユーザ関係性
-  user_relationship: number;
+  userRelationship: number;
   // 住所・郵便番号
-  address_zip_code: string;
+  addressZipCode: string;
   // 住所・都道府県コード
-  address_prefecture_code: string;
+  addressPrefectureCode: string;
   // 住所・都道府県名
-  address_prefecture_name: string;
+  addressPrefectureName: string;
   // 住所・市区町村
-  address_city: string;
+  addressCity: string;
   // 住所・丁目番地
-  address_street: string;
+  addressStreet: string;
   // 電話番号
-  phone_number: string;
+  phoneNumber: string;
   // 携帯電話番号
-  mobile_phone_number: string;
+  mobilePhoneNumber: string;
   // メールアドレス
-  mail_address: string;
+  mailAddress: string;
   // 非表示フラグ（0: 表示, 1: 非表示）
-  hidden_flg: number;
+  hiddenFlg: number;
   // 備考（メモ）
   memo: string;
 }

@@ -8,21 +8,22 @@ const contactListRawJson: { contactList: Contact[] } = JSON.parse(
 const contactListJson: Contact[] = contactListRawJson.contactList;
 
 for (let i = 0; i < contactListJson.length; i += 1) {
+  console.log(contactListJson[i].userId);
   const contactInfo = new Contact(
-    Number(contactListJson[i].user_id),
-    contactListJson[i].user_name,
-    contactListJson[i].user_name_kana,
-    contactListJson[i].user_birthday,
-    Number(contactListJson[i].user_relationship),
-    contactListJson[i].address_zip_code,
-    contactListJson[i].address_prefecture_code,
-    contactListJson[i].address_prefecture_name,
-    contactListJson[i].address_city,
-    contactListJson[i].address_street,
-    contactListJson[i].phone_number,
-    contactListJson[i].mobile_phone_number,
-    contactListJson[i].mail_address,
-    Number(contactListJson[i].hidden_flg),
+    contactListJson[i].userId,
+    contactListJson[i].userName,
+    contactListJson[i].userNameKana,
+    contactListJson[i].userBirthday,
+    Number(contactListJson[i].userRelationship),
+    contactListJson[i].addressZipCode,
+    contactListJson[i].addressPrefectureCode,
+    contactListJson[i].addressPrefectureName,
+    contactListJson[i].addressCity,
+    contactListJson[i].addressStreet,
+    contactListJson[i].phoneNumber,
+    contactListJson[i].mobilePhoneNumber,
+    contactListJson[i].mailAddress,
+    Number(contactListJson[i].hiddenFlg),
     contactListJson[i].memo
   );
   contactList.push(contactInfo);

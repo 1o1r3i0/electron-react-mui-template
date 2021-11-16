@@ -61,21 +61,21 @@ export default function ContactTables(props: Props) {
           </TableHead>
           <TableBody>
             {mockDataContactList.map((row, index) => (
-              <StyledTableRow key={row.user_id}>
-                <StyledTableCell>{row.user_id}</StyledTableCell>
+              <StyledTableRow key={row.userId}>
+                <StyledTableCell>{row.userId}</StyledTableCell>
                 <StyledTableCell component="th" scope="row">
-                  {row.user_name}
+                  {row.userName}
                 </StyledTableCell>
-                <StyledTableCell>{row.user_name_kana}</StyledTableCell>
-                <StyledTableCell>{row.user_relationship}</StyledTableCell>
+                <StyledTableCell>{row.userNameKana}</StyledTableCell>
+                <StyledTableCell>{row.userRelationship}</StyledTableCell>
                 <StyledTableCell align="right">
-                  {row.phone_number}
-                </StyledTableCell>
-                <StyledTableCell align="right">
-                  {row.mobile_phone_number}
+                  {row.phoneNumber}
                 </StyledTableCell>
                 <StyledTableCell align="right">
-                  {row.mail_address}
+                  {row.mobilePhoneNumber}
+                </StyledTableCell>
+                <StyledTableCell align="right">
+                  {row.mailAddress}
                 </StyledTableCell>
                 <StyledTableCell align="center">
                   <IconButton

@@ -18,68 +18,66 @@ type Props = {
   isDialogOpen: boolean;
   contactInfo: Contact;
   onClose: () => void;
+  onClickDeleteConfirmButton: (user_id: string) => void;
 };
 
 const ContactDialog = (props: Props) => {
   const { contactInfo } = props;
   const { isDialogOpen } = props;
   const { onClose } = props;
+  const { onClickDeleteConfirmButton } = props;
 
   return (
     <Dialog open={isDialogOpen} onClose={onClose} maxWidth="lg" fullWidth>
       <DialogTitle>
-        <Typography
-          variant="h5"
-          component="div"
-          className="dialog-header-typography"
-        >
+        <Typography variant="h5" component="div">
           連絡先詳細
         </Typography>
       </DialogTitle>
       <DialogContent>
         <DialogContentText>
           <Typography variant="h6" component="div">
-            <IconButton aria-label="delete" disabled color="primary">
-              <PermContactCalendarOutlinedIcon />
+            <IconButton aria-label="delete" disabled>
+              <PermContactCalendarOutlinedIcon color="primary" />
             </IconButton>
-            {contactInfo.user_name}
+            {contactInfo.userName}
           </Typography>
           <Typography
             variant="caption"
             component="div"
             style={{ marginLeft: '40px' }}
           >
-            {contactInfo.user_name_kana}
+            {contactInfo.userNameKana}
           </Typography>
           <Typography variant="body1" component="div">
             <span style={{ marginRight: '15px' }}>
-              <IconButton aria-label="delete" disabled color="primary">
-                <PhoneOutlinedIcon />
+              <IconButton aria-label="delete" disabled>
+                <PhoneOutlinedIcon color="primary" />
               </IconButton>
-              <a href={`tel:${contactInfo.phone_number}`}>
-                {contactInfo.phone_number}
+              <a href={`tel:${contactInfo.phoneNumber}`}>
+                {contactInfo.phoneNumber}
               </a>
             </span>
             <span>
-              <IconButton aria-label="delete" disabled color="primary">
-                <PhoneIphoneOutlinedIcon />
+              <IconButton aria-label="delete" disabled>
+                <PhoneIphoneOutlinedIcon color="primary" />
               </IconButton>
-              <a href={`tel:${contactInfo.mobile_phone_number}`}>
-                {contactInfo.mobile_phone_number}
+              <a href={`tel:${contactInfo.mobilePhoneNumber}`}>
+                {contactInfo.mobilePhoneNumber}
               </a>
             </span>
           </Typography>
           <Typography variant="body1" component="div">
-            <IconButton aria-label="delete" disabled color="primary">
-              <EmailOutlinedIcon />
+            <IconButton aria-label="delete" disabled>
+              <EmailOutlinedIcon color="primary" />
             </IconButton>
-            <a href={`mailto:${contactInfo.mail_address}`}>
-              {contactInfo.mail_address}
+            <a href={`mailto:${contactInfo.mailAddress}`}>
+              {contactInfo.mailAddress}
             </a>
           </Typography>
           <Typography variant="body1" component="div">
-            <IconButton aria-label="delete" disabled color="primary">
-              <HouseOutlinedIcon />
+            <IconButton aria-label="delete" disabled>
+              <HouseOutlinedIcon color="primary" />
             </IconButton>
             <button
               type="button"
@@ -87,10 +85,10 @@ const ContactDialog = (props: Props) => {
               onClick={() => {
                 window.open(
                   `https://maps.google.co.jp/maps?q=${
-                    contactInfo.address_zip_code +
-                    contactInfo.address_prefecture_name +
-                    contactInfo.address_city +
-                    contactInfo.address_street
+                    contactInfo.addressZipCode +
+                    contactInfo.addressPrefectureName +
+                    contactInfo.addressCity +
+                    contactInfo.addressStreet
                   }`,
                   'GoogleMap',
                   'width=1280,height=720,noopener'
@@ -99,11 +97,11 @@ const ContactDialog = (props: Props) => {
               }}
             >
               <span style={{ marginRight: '5px' }}>
-                〒{contactInfo.address_zip_code}
+                〒{contactInfo.addressZipCode}
               </span>
-              {contactInfo.address_prefecture_name}
-              {contactInfo.address_city}
-              {contactInfo.address_street}
+              {contactInfo.addressPrefectureName}
+              {contactInfo.addressCity}
+              {contactInfo.addressStreet}
             </button>
           </Typography>
           {contactInfo.memo !== '' && (
@@ -114,12 +112,17 @@ const ContactDialog = (props: Props) => {
         </DialogContentText>
       </DialogContent>
       <DialogActions>
-        <Tooltip title="Delete">
-          <IconButton aria-label="delete">
+        <Tooltip title="削除">
+          <IconButton
+            aria-label="delete"
+            onClick={() => {
+              onClickDeleteConfirmButton(contactInfo.userId);
+            }}
+          >
             <DeleteIcon />
           </IconButton>
         </Tooltip>
-        <Tooltip title="Edit">
+        <Tooltip title="編集">
           <IconButton aria-label="edit" color="primary">
             <EditIcon />
           </IconButton>
