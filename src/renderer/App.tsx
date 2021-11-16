@@ -1,5 +1,5 @@
 import { MemoryRouter as Router, Route, Switch } from 'react-router-dom';
-import ApplicationBar from './parts/ApplicationBar';
+import ApplicationBar from './components/ApplicationBar';
 import Home from './pages/Home';
 import Contacts from './pages/Contacts';
 import AddContacts from './pages/AddContact';
